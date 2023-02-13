@@ -1,0 +1,19 @@
+@import 'libs/bootstrap-reboot.scss';
+@import '~aos/dist/aos.css';
+@import '~@fancyapps/ui/dist/fancybox.css';
+
+@import 'base/variables.scss';
+@import 'base/mixins';
+@import 'base/fonts.scss';
+@import 'base/general.scss';
+
+@import 'blocks/promo.scss';
+@import 'blocks/animations.scss';
+@import 'blocks/types.scss';
+@import 'blocks/cases.scss';
+@import 'blocks/contact';
+@import 'blocks/forms';
+@import 'blocks/buttons';
+@import 'blocks/collab';
+@import 'blocks/footer';
+@import 'blocks/cookies';

@@ -1,0 +1,41 @@
+.cookies {
+    input {
+        display: none;
+    }
+    &__popup {
+        position: fixed;
+        width: 100%;
+        background: #FAFD77;
+        left: 0;
+        top: calc(100% + 1px);
+        transition: 0.5s all;
+        z-index: 5;
+        color: #000;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 33px 0;
+        p {
+            max-width: 525px;
+            line-height: 1.2;
+        }
+        label {
+            display: block;
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 1.2;
+            text-decoration: underline;
+            cursor: pointer;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 7px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    input:checked ~ &__popup {
+        transform: translateY(-100%);
+    }
+}

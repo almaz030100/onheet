@@ -1,0 +1,47 @@
+.contact {
+    padding: 146px 0 50px;
+    background: url('../img/contact/contact-bg.jpg') center center / cover no-repeat;
+    color: #000;
+    &__wrapper {
+        position: relative;
+        transition: 0.1s all ease-out;
+        top: 400px;
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 94px 120px;
+        background: url("../img/contact/contact-wrapper-bg.jpg") center center / cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 250px;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__write {
+        position: relative;
+        font-family: 'SA No Rules';
+        font-size: 171px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        &:after {
+            content: url("../img/contact/contact-smile.svg");
+            display: block;
+            position: absolute;
+            left: 100%;
+            top: 30%;
+        }
+    }
+    .form {
+        &__inputs {
+            display: grid;
+            grid-template-columns: 1fr 1fr 115px;
+            gap: 10px;
+        }
+        &__policy {
+            margin-top: 32px;
+            text-align: center;
+        }
+    }
+}

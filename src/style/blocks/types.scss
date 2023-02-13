@@ -1,0 +1,81 @@
+.types {
+    padding: int(150,210) 0 0 0;
+    background: url('../img/types/types-bg.png') right center no-repeat, #000;
+    &__top {
+        position: relative;
+        overflow: hidden;
+    }
+    &__title {
+        strong {
+            font-family: 'SA No Rules';
+            font-weight: normal;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #FAFD77;
+        }
+        span {
+            display: block;
+        }
+        br {
+            display: none;
+        }
+    }
+    &__main {
+        margin-top: int(150,210);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7px;
+    }
+    &__item {
+        background: url('../img/types/types-item-1.jpg') center center / 120% no-repeat;
+        cursor: pointer;
+        transition-property: all;
+        &_second {
+            background-image: url('../img/types/types-item-2.jpg');
+        }
+        &-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &-title {
+            font-family: 'SA No Rules';
+            font-size: 160px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            transform-origin: 50% 100%;
+            transition: opacity 1.2s, transform 0.5s !important;
+        }
+        &-list {
+            height: 48px;
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            margin-top: 30px;
+            flex-direction: column;
+            align-items: center;
+            span {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 48px;
+                transform: translateY(36px);
+            }
+        }
+        &:hover {
+            .types__item-title {
+                transform: scale(0.8) !important;
+            }
+            .types__item-list {
+                span {
+                    animation: textSliding 3s ease infinite;
+                }
+            }
+        }
+        &.aos-animate {
+            background-size: 100%;
+        }
+    }
+}

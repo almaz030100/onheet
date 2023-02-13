@@ -1,0 +1,26 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes textSliding {
+    0% {
+        transform: translateY(36px);
+    }
+    25% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-48px);
+    }
+    75% {
+        transform: translateY(-96px);
+    }
+    100% {
+        transform: translateY(-140px);
+    }
+}
