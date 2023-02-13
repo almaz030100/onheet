@@ -27,9 +27,11 @@
         gap: 7px;
     }
     &__item {
-        background: url('../img/types/types-item-1.jpg') center center / 120% no-repeat;
+        background: url('../img/types/types-item-1.jpg') center center no-repeat;
+        background-size: 100%;
         cursor: pointer;
         transition-property: all;
+        transition: 1.2s all;
         &_second {
             background-image: url('../img/types/types-item-2.jpg');
         }
@@ -73,9 +75,6 @@
                     animation: textSliding 3s ease infinite;
                 }
             }
-        }
-        &.aos-animate {
-            background-size: 100%;
         }
     }
 }

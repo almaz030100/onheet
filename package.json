@@ -18,12 +18,6 @@
     "css-loader": "^6.7.3",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
-    "image-minimizer-webpack-plugin": "^3.8.1",
-    "imagemin": "^8.0.1",
-    "imagemin-jpegtran": "^7.0.0",
-    "imagemin-mozjpeg": "^10.0.0",
-    "imagemin-optipng": "^8.0.0",
-    "imagemin-pngquant": "^9.0.2",
     "mini-css-extract-plugin": "^2.7.2",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.0.2",
@@ -37,8 +31,8 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.31",
-    "aos": "^3.0.0-beta.6",
     "core-js": "^3.27.2",
+    "gsap": "^3.11.4",
     "imask": "^6.4.3",
     "jquery": "^3.6.3",
     "jquery-validation": "^1.19.5"

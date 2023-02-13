@@ -4,7 +4,7 @@
     &__title {
         position: relative;
         transition: 0.1s all ease-out;
-        top: 70px;
+        transform: translate(0px, 100px);
     }
     &__wrapper {
         margin-top: int(40,70);
@@ -13,8 +13,8 @@
         gap: 20px;
         position: relative;
         z-index: 1;
-        top: 70px;
         transition: 0.1s all ease-out;
+        transform: translate(0px, 100px);
         &-blur {
             position: absolute;
             top: 20%;
@@ -97,7 +97,7 @@
             margin-top: int(120,220);
             position: relative;
             transition: 0.1s all ease-out;
-            top: 80px;
+            transform: translate(0px, 100px);
         }
         &__wrapper {
             margin-top: int(40,70);
@@ -127,16 +127,16 @@
                 line-height: 1.25;
             }
             &:nth-child(1) {
-                top: 50px;
+                transform: translate(0px, 100px);
             }
             &:nth-child(2) {
-                top: 80px;
+                transform: translate(0px, 150px);
             }
             &:nth-child(3) {
-                top: 110px;
+                transform: translate(0px, 200px);
             }
             &:nth-child(4) {
-                top: 140px;
+                transform: translate(0px, 250px);
             }
         }
     }
