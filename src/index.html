@@ -13,7 +13,7 @@
                 <div class="promo__wrapper">
                     <div class="promo__header">
                         <div class="promo__header-left">текст в углу первого экрана, который<br> что-то должен транслировать</div>
-                        <a href="#" class="promo__link hover-underline">
+                        <a data-fancybox href="#modal" class="promo__link hover-underline">
                             <span>обсудить проект</span>
                             <img src="img/promo/arrow-upper-right.svg" alt="arrow-upper-right">
                         </a>
@@ -258,7 +258,7 @@
             <div class="container">
                 <div class="footer__wrapper">
                     <div class="footer__left">
-                        <a class="title" href="#">
+                        <a class="title" href="#modal" data-fancybox>
                             <span class="hover-underline">давайте</span>
                             <span class="hover-underline">обсудим</span>
                             <span class="hover-underline"><span>проект</span> <img src="img/footer/footer-arrow-upper-right.svg" alt="footer-arrow-upper-right"></span>
@@ -282,6 +282,45 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal__wrapper">
+            <form action="#" class="form">
+                <div class="form__wrapper">
+                    <div class="form__title title">форма</div>
+                    <div class="form__inputs">
+                        <div class="form__inputbox">
+                            <input type="text" name="name">
+                            <div class="placeholder">имя</div>
+                        </div>
+                        <div class="form__inputbox">
+                            <input type="text" name="phone">
+                            <div class="placeholder">телефон</div>
+                        </div>
+                        <div class="form__inputbox">
+                            <input type="text" name="email">
+                            <div class="placeholder">почта</div>
+                        </div>
+                        <div class="form__inputbox">
+                            <label for="file" class="modal-file">
+                                <input type="file" name="file" id="file">
+                                <img src="img/modal/modal-file-icon.svg" alt="modal-file-icon">
+                            </label>
+                            <div class="placeholder">прикрепить файл</div>
+                        </div>
+                    </div>
+                    <button class="button">
+                        <span>отправить</span>
+                        <img src="img/contact/contact-button-arrow.svg" alt="contact-button-arrow">
+                    </button>
+                    <div class="form__policy">
+                        Нажимая на кнопку, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с
+                        <a href="#">политикой конфиденциальности</a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>

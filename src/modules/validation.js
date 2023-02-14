@@ -40,4 +40,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+    document.querySelectorAll('input[name="file"]').forEach(el => {
+
+        el.addEventListener('input', () => {
+            if (el.files.length !== 0) {
+                console.log(el.files);
+                let fileName = el.files[0].name;
+                el.parentElement.parentElement.lastElementChild.textContent = `${fileName.slice(0, 20)} ...`;
+            }
+        });
+
+    });
+
 });
