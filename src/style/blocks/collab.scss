@@ -30,3 +30,62 @@
         //overflow: hidden;
     }
 }
+
+@media (max-width: 1699px) {
+    .collab__title a {
+        font-size: 223px;
+    }
+}
+
+@media (max-width: 1599px) {
+    .collab__title a {
+        font-size: 190px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .collab {
+        padding: 150px 0;
+    }
+    .collab__title a {
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .collab__title a {
+        font-size: 123px;
+    }
+}
+
+@media (max-width: 991px) {
+    .collab {
+        padding: 120px 0;
+    }
+    .collab__title a {
+        font-size: 99px;
+    }
+    .collab__title a img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .collab__title a {
+        font-size: 65px;
+    }
+    .collab__title a img {
+        width: 100px;
+        left: 65%;
+        top: 78%;
+    }
+}
+
+@media (max-width: 429px) {
+    .collab__title a {
+        font-size: 49px;
+    }
+    .collab__title a img {
+        left: 55%;
+    }
+}

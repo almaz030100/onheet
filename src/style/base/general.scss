@@ -14,17 +14,7 @@ body {
 // }
 
 .title {
-    font-size: int(34,82);
-}
-
-.tac {
-    text-align: center;
-}
-
-@media (max-width: 991px) {
-    .tal {
-        text-align: center;
-    }
+    font-size: 82px;
 }
 
 @media (max-width: 1699px) {
@@ -91,5 +81,44 @@ body {
     }
     &:hover::after {
         width: 100%;
+    }
+}
+
+@media (max-width: 1699px) {
+    .title {
+        font-size: 75px;
+    }
+}
+
+@media (max-width: 1599px) {
+    .title {
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .title {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    body {
+        overflow-y: scroll;
+    }
+    .title {
+        font-size: 39px;
+    }
+}
+
+@media  (max-width: 767px) {
+    .title {
+        font-size: 34px;
     }
 }

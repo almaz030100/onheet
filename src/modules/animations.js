@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    if (ScrollTrigger.isTouch !== 1) {
+    if (window.innerWidth >= 992) {
 
         let fadingTexts = gsap.utils.toArray('[data-fading-text]');
         fadingTexts.forEach(el => {
@@ -78,7 +78,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+    }
 
+});
+
+window.onload = function() {
+
+    if (window.innerWidth >= 992) {
         let tl = gsap.timeline();
         tl
             .to('.onheet-title', {
@@ -105,39 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
             .set('body', {
                 overflowY: 'scroll'
             }, '<');
-
     }
 
-});
-
-// window.onload = function() {
-//
-//     let tl = gsap.timeline();
-//     tl
-//     .to('.onheet-title', {
-//         y: '-100%',
-//         duration: 1
-//     })
-//     .to('.loading__logos', {
-//         delay: 1,
-//         onStart: function() {
-//             document.querySelector('.loading__logos').classList.add('loading__logos_animated');
-//         }
-//     })
-//     .to('.onheet-title', {
-//         y: 0,
-//         top: '30px',
-//         width: '194px',
-//         delay: 2,
-//         duration: 0.7
-//     })
-//     .to('.loading', {
-//         opacity: 0,
-//         duration: 2
-//     }, '<')
-//     .set('body', {
-//         overflowY: 'scroll'
-//     }, '<');
-//
-//
-// };
+};

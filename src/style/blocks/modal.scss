@@ -46,3 +46,56 @@
         margin-top: 34px;
     }
 }
+
+@media (max-width: 1599px) {
+    .modal {
+        max-width: 950px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .modal {
+        max-width: 850px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .modal {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 767px) {
+    .modal {
+        max-width: 93%;
+        padding: 26px 36px;
+        .form input {
+            height: 65px;
+        }
+        .button {
+            height: 65px;
+            font-size: 19px;
+            img {
+                width: 30px;
+            }
+        }
+        .form__policy {
+            font-size: 13px;
+        }
+    }
+    .modal .form__inputs {
+        margin-top: 35px;
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .modal .modal-file img {
+        width: 30px;
+        left: 11px;
+        right: initial;
+    }
+    .modal .button img {
+        width: 20px;
+    }
+}

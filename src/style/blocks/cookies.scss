@@ -39,3 +39,34 @@
         transform: translateY(-100%);
     }
 }
+
+@media (max-width: 1199px) {
+    .cookies__wrapper p {
+        font-size: 14px;
+    }
+    .cookies__wrapper label {
+        font-size: 17px;
+        flex-shrink: 0;
+    }
+    .cookies__wrapper {
+        gap: 200px;
+    }
+}
+
+@media (max-width: 991px) {
+    .cookies__wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .cookies__wrapper p {
+        font-size: 12px;
+    }
+    .cookies__wrapper label {
+        font-size: 14px;
+    }
+}

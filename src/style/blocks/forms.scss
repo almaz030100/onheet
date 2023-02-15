@@ -46,3 +46,16 @@ input.error {
         outline-color: red;
     }
 }
+
+@media (max-width: 1199px) {
+    .form input {
+        height: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .form input {
+        font-size: 18px;
+        padding: 0 20px 0 30px;
+    }
+}

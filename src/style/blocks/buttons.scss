@@ -15,3 +15,9 @@
         transition: none;
     }
 }
+
+@media (max-width: 1199px) {
+    .button {
+        height: 100px;
+    }
+}
