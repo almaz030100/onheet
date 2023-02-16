@@ -35,6 +35,14 @@
             }
         }
     }
+    &._sending {
+        button {
+            &:after {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
 }
 
 label.error {
