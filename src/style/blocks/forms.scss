@@ -1,4 +1,8 @@
 .form {
+    position: relative;
+    &__wrapper {
+        transition: 0.3s all;
+    }
     input {
         width: 100%;
         height: 115px;
@@ -43,6 +47,37 @@
             }
         }
     }
+    &._success {
+        .form__wrapper {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .form__thanks {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &._error {
+        .button {
+            &:before {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    &__thanks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s all 0.3s;
+    }
 }
 
 label.error {
@@ -65,5 +100,20 @@ input.error {
     .form input {
         font-size: 18px;
         padding: 0 20px 0 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .form__thanks {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        img {
+            width: 70px;
+        }
+        br {
+            display: none;
+        }
     }
 }

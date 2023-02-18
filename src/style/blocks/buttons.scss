@@ -27,6 +27,18 @@
         visibility: hidden;
         transition: 0.3s all;
     }
+    &:before {
+        content: 'Ошибка!';
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.3s all;
+        color: red;
+        font-size: 16px;
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 @media (max-width: 1199px) {
