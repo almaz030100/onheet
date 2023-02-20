@@ -80,6 +80,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+
+    let promoStar = document.querySelector('.promo__star');
+    let starInput = document.querySelector('input#star-input');
+    promoStar.addEventListener('mouseover', () => {
+        starInput.checked = true;
+    });
+    promoStar.addEventListener('mouseout', () => {
+        starInput.checked = false;
+    });
+    promoStar.addEventListener('click', () => {
+        starInput.checked = starInput.checked === false;
+    });
+
 });
 
 window.onload = function() {
