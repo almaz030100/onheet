@@ -34,14 +34,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'almaz.asad@mail.ru'; // Логин на почте
-    $mail->Password   = 'wk4kDRt7cUpU69EWVmMP'; // Пароль на почте
+    $mail->Username   = ''; // Логин на почте
+    $mail->Password   = ''; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('almaz.asad@mail.ru', 'Алмаз Асадуллин'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('', ''); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('yakusheva.1997@mail.ru');
+    $mail->addAddress('');
 
     // Прикрепление файлов к письму
     if (isset($_FILES['file'])
